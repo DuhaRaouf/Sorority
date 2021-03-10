@@ -1,0 +1,42 @@
+﻿/*Brands*/
+.brands{
+    background-color:rgba(0, 0, 0, .05)
+}
+.brands-item{
+    width:31.25%;
+    height:180px;
+    float:left;
+    /*padding:1% 1% ;*/
+    position:relative;
+    margin-bottom:20px
+}
+.brands-item.mg{
+    margin:0px 20px
+}
+.brands-item > img{
+    width:100%;
+    height:100%; 
+    border: 1px solid rgba(0, 0, 0, .5);
+/*  border-radius:100px;*/
+}
+.brands-item .brand-logo {
+    position: absolute;
+    color: var(--secondcolor);
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.brands-layer{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(0, 0, 0,.3);
+    opacity:0;
+    transition:.5s;
+}
+.brands-layer:hover {
+    opacity: 1
+}

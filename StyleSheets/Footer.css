@@ -1,0 +1,33 @@
+﻿/*Footer*/
+.footer {
+    background-color: var(--secondcolor);
+    text-align: center
+}
+.footer-items{
+
+}
+.footer-items li{
+    display:inline-block
+}
+.footer-items a{
+    display:block;
+    margin:6px 1.5px
+}
+.footer-items img{
+    display:block;
+    width:40px;
+    height:40px;
+    border-radius:3px;
+    transition:border-radius .3s
+}
+.footer-items img:hover{
+    border-radius:50%
+}
+.footer> p{
+    text-transform:uppercase
+}
+.copr {
+    text-decoration: underline;
+    color: var(--maincolor);
+    text-transform: capitalize
+}

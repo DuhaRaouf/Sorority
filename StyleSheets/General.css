@@ -1,0 +1,109 @@
+﻿/*Main Colors*/
+:root {
+    --maincolor: #455058;
+    --bgcolor: #f2f2f2;
+    --secondcolor: #fff77e;
+    --textcolor: #000000;
+    --textsecondcolor: #999;
+    --inputcolor: #f4f4f4;
+    --iconcolor: #000000;
+}
+/*General*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+body {
+    font-family: 'Varela Round', sans-serif;
+    /*height:5000px*/
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+.clear{
+    clear:both
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    text-transform:capitalize
+}
+a{
+    text-decoration:none;
+}
+button {
+    cursor: pointer;
+    font-family: inherit
+}
+.hover-opacity {
+    transition: opacity .3s
+}
+.hover-opacity:hover {
+    opacity: 0.85;
+}
+.section-padding{
+    padding:70px 0
+}
+.section {
+    height: 100vh;
+}
+/*Section Header*/
+.section-header{
+   text-align:center
+}
+.section-title{
+    text-transform:capitalize;
+    font-size:35px;
+    letter-spacing:.7px;
+    margin-bottom:4px
+}
+.section-header .line {
+    display: block;
+    margin: 0 auto 42px auto;
+    width: 5%;
+    height: 3px;
+    background-color: var(--secondcolor);
+}
+/*top to bottom after effect*/
+.tb-effect{
+    position:relative
+}
+.tb-effect:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:var(--secondcolor);
+    /*background-image: url('../Images/Backgrounds/1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;*/
+    z-index: -1;
+    transition: height .5s
+}
+.tb-effect:hover:after{
+    height:100%
+}
+/*Left to right effect*/
+.ltr-effect {
+    position: relative;
+}
+.ltr-effect:after {
+    position: absolute;
+    content: "";
+    background-color:rgb(0, 0, 0);
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    width:0;
+    transition: width .5s;
+    z-index:50
+}
+.ltr-effect:hover:after{
+    width:100%
+}

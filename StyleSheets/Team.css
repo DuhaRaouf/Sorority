@@ -1,0 +1,102 @@
+﻿/*Team*/
+.team-section{
+    height:400px;
+    position:relative
+}
+.team {
+    background-image: url('../Images/Backgrounds/6jpg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px
+}
+.team-content{
+    padding:110px 0;
+    width:80%;
+    margin:auto
+}
+.team-item{
+    float:left;
+    width:50%
+}
+.team-toplayer{
+    padding:25px 0px 40px 105px;
+    position:relative
+}
+.team-toplayer > img{
+    border-radius:50%;
+    position:absolute;
+    top:10px;
+    left:10px
+}
+.team-item h3 {
+    color:white;
+    font-family: "Lora script=latin rev=2";
+}
+.team-toplayer > span {
+    color: var(--secondcolor);
+}
+.team-desc{
+    color:white;
+    font-size:17px;
+    line-height:1.2;
+    margin-right:50px
+}
+/*Team Members*/
+.member-item {
+    width: 23%;
+    float: left;
+    background-color: var(--maincolor);
+    padding: 25px 10px;
+    text-align: center;
+    margin-right: 2%
+}
+.member-item.mg{
+    margin-right:0
+}
+.member-img {
+    width: 90%;
+    margin: auto;
+    position:relative
+}
+.member-img > img {
+    width:100%;
+    height:250px;
+}
+.member-title{
+    color:#222;
+    margin:8px 0
+}
+.member-desc{
+    color:#999;
+    text-transform:uppercase;
+    font-size:14px
+}
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 5px;
+    right: 0;
+    /*background-color: rgba(0,0,0,.5);*/
+    visibility:hidden;
+    opacity:0
+}
+.img-overlay a{
+    display:block;
+    background-color:var(--secondcolor);
+    width:40px;
+    height:40px;
+    margin-left:auto
+}
+.member-item:hover .img-overlay{
+    visibility:visible;
+    opacity:1
+}
+.member-item.tb-effect{
+    z-index:1
+}
+.member-item:hover .member-desc {
+    color:#444f58;
+}

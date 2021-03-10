@@ -1,0 +1,36 @@
+﻿/*Shop*/
+.shop {
+    /*background-color: var(--secondcolor);*/
+}
+.shop-item {
+    float: left;
+    width: 30%;
+    height: 350px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .5);
+    /*border: 1px solid #e8e8e8;*/
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.shop-item.clothes.mg {
+    background-image: url('../Images/Shop/Clothes.jpg');
+    margin: 0 3.7%;
+}
+.shop-item.accessories {
+    background-image: url('../Images/Shop/Accessories2.jpg');
+}
+.shop-item.decor {
+    background-image: url('../Images/Shop/Homedecore2.jpg');
+}
+.shop-item-tilte {
+    color: var(--secondcolor);
+    padding: 50% 0;
+    opacity: 0;
+    transition: opacity .5s
+}
+.shop-item:hover .shop-item-tilte{
+    opacity:1;
+    background-color:rgba(0, 0, 0, .5)
+}

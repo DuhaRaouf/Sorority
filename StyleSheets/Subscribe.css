@@ -1,0 +1,54 @@
+﻿/*Subscription*/
+.sub-plans{
+
+}
+.sub-item {
+    width: 30%;
+    float: left;
+    padding: 20px 15px;
+    border: 1px solid var(--secondcolor);
+    text-align: center
+}
+.sub-item.mg{
+    margin:0 5%
+}
+.sub-title {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #444f58
+}
+.sub-cost {
+    width: 120px;
+    height: 120px;
+    padding: 40px 0;
+    margin: 15px auto;
+    border: 3px solid var(--secondcolor);
+    border-radius: 50%
+}
+.sub-benefits{
+    list-style:none
+}
+.sub-benefits > li{
+    color:#444f58;
+    line-height:1.5
+}
+.Subscibe {
+    background: none;
+    display: block;
+    width: 140px;
+    padding: 10px;
+    margin: 15px auto 0 auto;
+    background-color: var(--secondcolor);
+    border-color: var(--secondcolor);
+    border: 1px solid var(--secondcolor);
+    border-radius: 5px;
+    color: black;
+}
+.sub-item:hover .sub-cost {
+    border: 3px solid white;
+}
+.sub-item:hover .Subscibe {
+    background-color: white;
+    border-color: white;
+    border: 1px solid var(--secondcolor);
+}
